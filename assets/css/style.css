@@ -1,0 +1,589 @@
+/* font-family: 'Ephesis', cursive;
+font-family: 'Gabriela', serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+/* ==================== cover ===================== */
+#cover {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: url("../img/cover.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.cover-container,
+.button-cover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-content {
+  text-align: center;
+}
+
+.text-dari {
+  font-family: "Open Sans", sans-serif;
+  color: #073468;
+  font-size: 18px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.text-untuk {
+  color: white;
+  font-size: 70px;
+  text-transform: capitalize;
+  font-family: "Ephesis", cursive;
+  font-weight: normal;
+  line-height: 100px;
+}
+
+.cover-content span {
+  color: #073468;
+  text-transform: uppercase;
+}
+
+#btn-cover {
+  background: transparent;
+  border: none;
+  display: grid;
+  justify-items: center;
+  position: fixed;
+  bottom: 15px;
+}
+/* ======================== akhir cover ======================== */
+
+p,
+span {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ======================== banner ======================== */
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cr-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#banner h2 {
+  font-family: "Ephesis", cursive;
+  font-size: 70px;
+  font-weight: 100 !important;
+  text-transform: capitalize;
+}
+
+.img-cincin {
+  width: 50px;
+}
+/* ======================== akhir banner ======================== */
+/* ======================== waktu ======================== */
+.waktu-box::after,
+.waktu-box::after,
+.waktu-box::after {
+  content: ":";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+.waktu span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.waktu div {
+  color: #c4c4c4;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -5px;
+}
+
+#btn-waktu-pernikahan {
+  display: none;
+}
+/* ======================== akhir waktu ======================== */
+/* ======================== pangantin ======================== */
+#pengantin {
+  position: relative;
+}
+
+#pengantin h4 {
+  font-family: "Gabriola";
+  font-size: 26px;
+  font-weight: 100 !important;
+}
+
+.nama-pengantin {
+  font-size: 30px;
+  font-weight: 100 !important;
+  font-family: "Ephesis", cursive;
+  color: #4a90e2;
+  margin-top: 15px;
+}
+
+#pengantin p {
+  color: #351105;
+  font-family: "Manrope", sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 300px;
+}
+
+#pengantin .pengantin {
+  padding: 75px 0px;
+}
+
+.img-pengantin {
+  width: 200px;
+  border-radius: 100px;
+}
+
+.ornament-kiri-1 {
+  position: absolute;
+  width: 450px;
+  left: 0;
+  top: 0;
+}
+
+.ornament-kanan-1 {
+  position: absolute;
+  width: 450px;
+  right: 0;
+  bottom: 0;
+}
+/* ======================== akhir pengantin ======================== */
+/* ======================== maps ======================== */
+.lokasi-container {
+  background-color: #5488b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.ornament-lokasi {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 310px;
+}
+
+.lokasi-content {
+  z-index: 2;
+  padding: 50px 0px;
+}
+
+.lokasi p {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.lokasi h1 {
+  font-size: 70px;
+  font-family: "Ephesis", cursive;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.btn-maps {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #5488b8;
+}
+.maps-container {
+  width: 100%;
+  height: 500px;
+}
+
+/* ======================== akhir maps ======================== */
+/* ======================== acara ======================== */
+.container-acara p {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Crimson Pro", serif;
+  font-style: italic;
+  color: #111111;
+}
+.nama-acara {
+  font-size: 30px;
+  font-family: "Gabriola";
+  color: #111111;
+  text-transform: capitalize;
+  font-weight: 100 !important;
+  letter-spacing: normal;
+  padding-bottom: 20px;
+}
+
+.h5-acara {
+  color: #111111;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.p-acara {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 8px;
+  color: #a0824d;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* ======================== akhir acara ======================== */
+/* ======================== salam ======================== */
+#salam-penutup,
+#salam-pembuka {
+  padding: 50px 0px;
+  position: relative;
+}
+.ornament-kanan-2 {
+  position: absolute;
+  width: 450px;
+  right: 0;
+  top: 0;
+}
+
+.ornament-kiri-2 {
+  position: absolute;
+  width: 450px;
+  left: 0;
+  bottom: 0;
+}
+
+.salam-pembuka h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  color: #a0824d;
+  font-family: "Gabriola";
+  font-weight: 100 !important;
+}
+
+.salam-pembuka p {
+  color: #351105;
+  font-family: "Gabriola";
+  font-weight: 100 !important;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.salam-penutup h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  color: #a0824d;
+  font-family: "Gabriola";
+  font-weight: 100 !important;
+}
+.salam-penutup p {
+  color: #351105;
+  font-family: "Gabriola";
+  font-weight: 100 !important;
+  font-size: 20px;
+  line-height: 24px;
+}
+/* ======================== akhir salam ======================== */
+/* ======================== gallery ======================== */
+#gallery {
+  padding: 50px 0px;
+  background-color: #f2e6c9;
+}
+
+#gallery p {
+  font-size: 14px;
+  color: #626262;
+  font-weight: 700 !important;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+#gallery {
+  font-size: 30px;
+  font-weight: 100 !important;
+  font-family: "Ephesis", cursive;
+  color: #c6ad7b;
+}
+
+.img-gallery {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.carousel__track,
+.fancybox__counter,
+.fancybox__button--thumbs,
+/* .fancybox__button--slideshow, */
+.fancybox__button--fullscreen,
+.fancybox__button--zoom {
+  display: none !important;
+}
+/* ======================== akhir gallery ======================== */
+/* ======================== gallery ======================== */
+#gallery {
+  padding: 50px 0px;
+}
+
+#gallery p {
+  font-size: 14px;
+  color: #626262;
+  font-weight: 700 !important;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+/* #gallery h2 {
+  font-size: 30px;
+  font-weight: 100 !important;
+  font-family: "Ephesis", cursive;
+  color: #c6ad7b;
+} */
+
+.img-gallery {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.carousel__track,
+.fancybox__counter,
+.fancybox__button--thumbs,
+/* .fancybox__button--slideshow, */
+.fancybox__button--fullscreen,
+.fancybox__button--zoom {
+  display: none !important;
+}
+/* ======================== akhir gallery ======================== */
+/* ======================== video pengantin ======================== */
+#video {
+  padding: 60px 0px;
+  background-color: #5488b8;
+}
+.video-container {
+  height: 500px;
+}
+/* ======================== akhir video ======================== */
+/* ======================== protokol ======================== */
+#protokol {
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 40px 15px;
+}
+.container-protokol h4 {
+  font-family: "Gabriela", serif;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #111111;
+}
+.container-protokol p,
+.container-protokol span {
+  color: #626262;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.img-protokol {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.container-acara {
+  margin: 0;
+  margin-top: 30px;
+  padding: 40px;
+}
+/* ======================== akhir protokol ======================== */
+/* ======================== gift ======================== */
+#gift {
+  margin: 0;
+  margin-top: 30px;
+  padding: 30px 0px;
+  width: 100%;
+}
+
+#gift h2 {
+  font-size: 14px;
+  color: #626262;
+  font-weight: 700 !important;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.img-qr {
+  width: 200px;
+}
+
+/* ======================== akhir gift ======================== */
+/* ======================== buku tamu ======================== */
+#buku-tamu h2 {
+  font-size: 14px;
+  color: #626262;
+  font-weight: 700 !important;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#nama,
+#pesan,
+#kehadiran,
+.btn-tamu {
+  border-radius: 2px;
+  border: 1px solid #c6ad7b;
+}
+/* ======================== akhir buku tamu ======================== */
+/* ======================== nama ======================== */
+.nama {
+  margin: 0;
+  margin-top: 40px;
+}
+.nama h2 {
+  font-size: 44px;
+  font-weight: 100 !important;
+  font-family: "Ephesis", cursive;
+  color: #c6ad7b;
+  margin-top: 15px;
+}
+
+.img-ornamnet {
+  width: 300px;
+}
+/* ======================== akhir nama ======================== */
+/* ======================== audio ======================== */
+#audio {
+  margin: 0;
+  margin-top: 30px;
+  padding: 30px 0px;
+}
+/* ======================== akhir audio ======================== */
+/* ======================== footer ======================== */
+#footer {
+  margin: 0;
+  margin-top: 30px;
+  background-color: #a0824d;
+  padding: 40px;
+  color: white;
+}
+
+#footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+#footer .btn-footer {
+  margin: 0;
+  margin-top: 40px;
+  text-decoration: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 0px;
+}
+/* ======================== akhir footer ======================== */
+
+@media (max-width: 768px) {
+  .ornament-kanan,
+  .ornament-kiri {
+    width: 250px;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .ornament-kanan,
+  .ornament-kiri,
+  .ornament-acara {
+    width: 220px;
+  }
+
+  #resepsi {
+    padding-left: 20px;
+  }
+
+  #btn-waktu-pernikahan {
+    display: block;
+  }
+  .mobile-detail {
+    overflow-x: hidden;
+    display: -webkit-box;
+    flex-wrap: nowrap;
+  }
+  .img-icons {
+    width: 50px;
+  }
+  .ornamnet-kiri-1,
+  .ornamnet-kanan-1 {
+    width: 120px;
+  }
+
+  .slider-item,
+  .video-item {
+    padding: 0px !important;
+  }
+  #carousel {
+    margin-top: -100px;
+  }
+
+  .img-ornamnet {
+    width: 300px;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .img-protokol {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  #protokol span {
+    font-size: 13px;
+  }
+
+  .video-container {
+    height: 200px;
+  }
+  .img-ornamnet {
+    width: 250px;
+  }
+}
