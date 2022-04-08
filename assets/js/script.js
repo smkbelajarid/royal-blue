@@ -1,12 +1,11 @@
 $(document).ready(function () {
-  // $("#holy").hide();
-  // // $("#resepsi").hide();
+  $("#royal-blue").hide();
 
-  // // // jika button cover di klik
-  // $("#btn-cover").click(function () {
-  //   $("#holy").show();
-  //   $("#cover").hide();
-  // });
+  // // jika button cover di klik
+  $("#btn-cover").click(function () {
+    $("#royal-blue").show();
+    $("#cover").hide();
+  });
 
   $("#btn-resepsi").css("color", "#7e7e7e");
   $("#maps-resepsi").hide();
@@ -101,7 +100,7 @@ var marker = new H.map.Marker(
 map.addObject(marker);
 var ui = H.ui.UI.createDefault(map, defaultLayers);
 
-// hitung mundur
+// ==================== waktu =====================
 var dateTimeEvent = "Apr 28, 2025 09:00:00";
 
 var countDownDate = new Date(dateTimeEvent).getTime();

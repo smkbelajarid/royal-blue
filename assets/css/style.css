@@ -98,11 +98,19 @@ span {
   text-transform: capitalize;
 }
 
-.img-cincin {
-  width: 50px;
+#banner p {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
 }
 /* ======================== akhir banner ======================== */
 /* ======================== waktu ======================== */
+.waktu {
+  margin-top: 20px;
+}
+
 .waktu-box::after,
 .waktu-box::after,
 .waktu-box::after {
@@ -117,7 +125,7 @@ span {
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .waktu div {
@@ -144,8 +152,7 @@ span {
 }
 
 .nama-pengantin {
-  font-size: 30px;
-  font-weight: 100 !important;
+  font-size: 33px;
   font-family: "Ephesis", cursive;
   color: #4a90e2;
   margin-top: 15px;
@@ -155,7 +162,7 @@ span {
   color: #351105;
   font-family: "Manrope", sans-serif;
   line-height: 24px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300px;
 }
 
@@ -199,9 +206,12 @@ span {
   width: 310px;
 }
 
+.lokasi {
+  padding: 50px 20px;
+}
+
 .lokasi-content {
   z-index: 2;
-  padding: 50px 0px;
 }
 
 .lokasi p {
@@ -230,41 +240,6 @@ span {
 }
 
 /* ======================== akhir maps ======================== */
-/* ======================== acara ======================== */
-.container-acara p {
-  font-weight: bold;
-  font-size: 20px;
-  font-family: "Crimson Pro", serif;
-  font-style: italic;
-  color: #111111;
-}
-.nama-acara {
-  font-size: 30px;
-  font-family: "Gabriola";
-  color: #111111;
-  text-transform: capitalize;
-  font-weight: 100 !important;
-  letter-spacing: normal;
-  padding-bottom: 20px;
-}
-
-.h5-acara {
-  color: #111111;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.p-acara {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  margin-top: 8px;
-  color: #a0824d;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-/* ======================== akhir acara ======================== */
 /* ======================== salam ======================== */
 #salam-penutup,
 #salam-pembuka {
@@ -286,70 +261,71 @@ span {
 }
 
 .salam-pembuka h4 {
-  font-size: 26px;
+  font-size: 50px;
   text-transform: capitalize;
-  color: #a0824d;
-  font-family: "Gabriola";
-  font-weight: 100 !important;
+  color: #4a90e2;
+  font-family: "Ephesis", cursive;
 }
 
 .salam-pembuka p {
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  line-height: 26px;
+  font-size: 19px;
   color: #351105;
-  font-family: "Gabriola";
-  font-weight: 100 !important;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 .salam-penutup h4 {
-  font-size: 26px;
+  font-size: 35px;
   text-transform: capitalize;
-  color: #a0824d;
-  font-family: "Gabriola";
-  font-weight: 100 !important;
+  color: #4a90e2;
+  font-family: "Ephesis", cursive;
 }
 .salam-penutup p {
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
   color: #351105;
-  font-family: "Gabriola";
-  font-weight: 100 !important;
-  font-size: 20px;
-  line-height: 24px;
 }
 /* ======================== akhir salam ======================== */
-/* ======================== gallery ======================== */
-#gallery {
-  padding: 50px 0px;
-  background-color: #f2e6c9;
-}
-
-#gallery p {
-  font-size: 14px;
-  color: #626262;
-  font-weight: 700 !important;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-}
-#gallery {
-  font-size: 30px;
-  font-weight: 100 !important;
+/* ======================== acara ======================== */
+.nama-acara {
+  font-size: 34px;
   font-family: "Ephesis", cursive;
-  color: #c6ad7b;
+  color: #111111;
+  text-transform: capitalize;
+  font-weight: 100 !important;
+  letter-spacing: normal;
+  padding-bottom: 20px;
 }
 
-.img-gallery {
+.h5-acara {
+  color: #111111;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  font-weight: 100 !important;
+}
+
+.p-acara {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  margin-top: 8px;
+  color: #4a90e2;
+  text-transform: capitalize;
+}
+/* ======================== akhir acara ======================== */
+/* ======================== gallery full ======================== */
+#gallery-full {
   width: 100%;
-  margin-top: 20px;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cr-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
-.carousel__track,
-.fancybox__counter,
-.fancybox__button--thumbs,
-/* .fancybox__button--slideshow, */
-.fancybox__button--fullscreen,
-.fancybox__button--zoom {
-  display: none !important;
-}
-/* ======================== akhir gallery ======================== */
+/* ======================== akhir gallery full ======================== */
 /* ======================== gallery ======================== */
 #gallery {
   padding: 50px 0px;
@@ -359,15 +335,9 @@ span {
   font-size: 14px;
   color: #626262;
   font-weight: 700 !important;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Manrope", sans-serif;
   text-transform: uppercase;
 }
-/* #gallery h2 {
-  font-size: 30px;
-  font-weight: 100 !important;
-  font-family: "Ephesis", cursive;
-  color: #c6ad7b;
-} */
 
 .img-gallery {
   width: 100%;
@@ -436,7 +406,7 @@ span {
   font-size: 14px;
   color: #626262;
   font-weight: 700 !important;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Manrope", sans-serif;
   text-transform: uppercase;
   padding-bottom: 30px;
 }
@@ -451,7 +421,7 @@ span {
   font-size: 14px;
   color: #626262;
   font-weight: 700 !important;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Manrope", sans-serif;
   text-transform: uppercase;
   padding-top: 40px;
   padding-bottom: 30px;
@@ -462,25 +432,28 @@ span {
 #kehadiran,
 .btn-tamu {
   border-radius: 2px;
-  border: 1px solid #c6ad7b;
+  border: 1px solid #4a90e2;
 }
 /* ======================== akhir buku tamu ======================== */
 /* ======================== nama ======================== */
-.nama {
-  margin: 0;
-  margin-top: 40px;
+
+.nama-pengantin-judul {
+  font-size: 14px;
+  color: #626262;
+  font-weight: 700 !important;
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  padding-top: 40px;
 }
+
 .nama h2 {
   font-size: 44px;
   font-weight: 100 !important;
   font-family: "Ephesis", cursive;
-  color: #c6ad7b;
+  color: #4a90e2;
   margin-top: 15px;
 }
 
-.img-ornamnet {
-  width: 300px;
-}
 /* ======================== akhir nama ======================== */
 /* ======================== audio ======================== */
 #audio {
@@ -493,7 +466,7 @@ span {
 #footer {
   margin: 0;
   margin-top: 30px;
-  background-color: #a0824d;
+  background-color: #4a90e2;
   padding: 40px;
   color: white;
 }
@@ -513,8 +486,33 @@ span {
 /* ======================== akhir footer ======================== */
 
 @media (max-width: 768px) {
-  .ornament-kanan,
-  .ornament-kiri {
+  .nama-pengantin {
+    font-size: 26px;
+  }
+
+  #pengantin p {
+    font-size: 18px;
+  }
+
+  .lokasi h1 {
+    font-size: 40px;
+  }
+
+  .salam-pembuka h4,
+  .salam-penutup h4 {
+    font-size: 35px;
+  }
+
+  .salam-pembuka p,
+  .salam-penutup p {
+    font-size: 15px;
+  }
+
+  .ornament-kiri-1,
+  .ornament-kanan-1,
+  .ornament-lokasi,
+  .ornament-kiri-2,
+  .ornament-kanan-2 {
     width: 250px;
   }
 
@@ -525,10 +523,30 @@ span {
 }
 
 @media (max-width: 425px) {
-  .ornament-kanan,
-  .ornament-kiri,
-  .ornament-acara {
-    width: 220px;
+  #pengantin p {
+    font-size: 15px;
+  }
+
+  .lokasi {
+    padding: 50px 20px;
+  }
+
+  .salam-pembuka h4,
+  .salam-penutup h4 {
+    font-size: 28px;
+  }
+
+  .salam-pembuka p,
+  .salam-penutup p {
+    font-size: 15px;
+  }
+
+  .ornament-kiri-1,
+  .ornament-kanan-1,
+  .ornament-lokasi,
+  .ornament-kiri-2,
+  .ornament-kanan-2 {
+    width: 180px;
   }
 
   #resepsi {
