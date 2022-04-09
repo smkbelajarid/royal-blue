@@ -42,6 +42,40 @@ $(document).ready(function () {
   });
 });
 
+// ==================== waktu =====================
+var dateTimeEvent = "Apr 28, 2025 09:00:00";
+
+var countDownDate = new Date(dateTimeEvent).getTime();
+
+const clock = document.getElementById("waktu-container");
+const daysSpan = clock.querySelector(".hari");
+const hoursSpan = clock.querySelector(".jam");
+const minutesSpan = clock.querySelector(".menit");
+const secondsSpan = clock.querySelector(".detik");
+
+var x = setInterval(function () {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  if (distance < 0) {
+    clearInterval(x);
+    daysSpan.innerHTML = 0;
+    hoursSpan.innerHTML = 0;
+    minutesSpan.innerHTML = 0;
+    secondsSpan.innerHTML = 0;
+  } else {
+    daysSpan.innerHTML = days;
+    hoursSpan.innerHTML = hours;
+    minutesSpan.innerHTML = minutes;
+    secondsSpan.innerHTML = seconds;
+  }
+}, 1000);
+
 // ==================== maps pernikahan =====================
 var platform = new H.service.Platform({
   app_id: "Qj0Oi2FClG9rVKn1iErQ",
@@ -99,37 +133,3 @@ var marker = new H.map.Marker(
 );
 map.addObject(marker);
 var ui = H.ui.UI.createDefault(map, defaultLayers);
-
-// ==================== waktu =====================
-var dateTimeEvent = "Apr 28, 2025 09:00:00";
-
-var countDownDate = new Date(dateTimeEvent).getTime();
-
-const clock = document.getElementById("waktu-container");
-const daysSpan = clock.querySelector(".hari");
-const hoursSpan = clock.querySelector(".jam");
-const minutesSpan = clock.querySelector(".menit");
-const secondsSpan = clock.querySelector(".detik");
-
-var x = setInterval(function () {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  if (distance < 0) {
-    clearInterval(x);
-    daysSpan.innerHTML = 0;
-    hoursSpan.innerHTML = 0;
-    minutesSpan.innerHTML = 0;
-    secondsSpan.innerHTML = 0;
-  } else {
-    daysSpan.innerHTML = days;
-    hoursSpan.innerHTML = hours;
-    minutesSpan.innerHTML = minutes;
-    secondsSpan.innerHTML = seconds;
-  }
-}, 1000);
